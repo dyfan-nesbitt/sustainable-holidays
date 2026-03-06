@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Destination name
+// Image URL
+// Activities list
+// Estimated cost
+// Carbon score
+// Transport type
+// Duration
 
 const holidays = [
   {
     id: 1,
     destination: "Lisbon, Portugal",
-    image:
-      "images/lisbon-portugal.jpg",
+    image: "images/lisbon-portugal.jpg",
     duration: 7,
     cost: 850,
     carbonScore: 320,
@@ -24,8 +29,7 @@ const holidays = [
   {
     id: 2,
     destination: "Bacelona, Spain",
-    image:
-      "images/barcelona-spain.png",
+    image: "images/barcelona-spain.png",
     duration: 6,
     cost: 1150,
     carbonScore: 380,
@@ -44,8 +48,7 @@ const holidays = [
   {
     id: 3,
     destination: "Scottish Highlands, UK",
-    image:
-      "images/scottish-highlands.jpg",
+    image: "images/scottish-highlands.jpg",
     duration: 5,
     cost: 400,
     carbonScore: 85,
@@ -96,10 +99,11 @@ const holidays = [
       { name: "Coastal Hiking Trail", cost: 0, carbon: 0, time: "Morning" },
       { name: "Boat Trip to Capri", cost: 50, carbon: 15, time: "Afternoon" },
       { name: "Pasta Making Class", cost: 40, carbon: 1, time: "Evening" },
-      { name: "Positano Beach", cost: 0, carbon: 0, time: "Afternoon" }
+      { name: "Positano Beach", cost: 0, carbon: 0, time: "Afternoon" },
     ],
     tags: ["beach", "luxury", "food", "scenic", "relaxation"],
-    description: "Stunning cliffside villages, crystal water and incredible food."
+    description:
+      "Stunning cliffside villages, crystal water and incredible food.",
   },
   {
     id: 6,
@@ -112,12 +116,18 @@ const holidays = [
     transport: "car",
     activities: [
       { name: "Scafell Pike Hike", cost: 0, carbon: 0, time: "Morning" },
-      { name: "Kayaking on Windermere", cost: 25, carbon: 2, time: "Afternoon" },
+      {
+        name: "Kayaking on Windermere",
+        cost: 25,
+        carbon: 2,
+        time: "Afternoon",
+      },
       { name: "Country Pub Dinner", cost: 30, carbon: 2, time: "Evening" },
-      { name: "Cycle Trail", cost: 15, carbon: 0, time: "Morning" }
+      { name: "Cycle Trail", cost: 15, carbon: 0, time: "Morning" },
     ],
     tags: ["nature", "hiking", "budget", "relaxation", "adventure"],
-    description: "Britain's most beautiful national park right on your doorstep."
+    description:
+      "Britain's most beautiful national park right on your doorstep.",
   },
   {
     id: 7,
@@ -132,10 +142,10 @@ const holidays = [
       { name: "Northern Lights Tour", cost: 80, carbon: 10, time: "Evening" },
       { name: "Blue Lagoon", cost: 60, carbon: 5, time: "Afternoon" },
       { name: "Geysir Geothermal Area", cost: 0, carbon: 0, time: "Morning" },
-      { name: "Whale Watching", cost: 70, carbon: 20, time: "Morning" }
+      { name: "Whale Watching", cost: 70, carbon: 20, time: "Morning" },
     ],
     tags: ["adventure", "nature", "luxury", "unique", "scenic"],
-    description: "Volcanoes, geysers, northern lights and pure wilderness."
+    description: "Volcanoes, geysers, northern lights and pure wilderness.",
   },
   {
     id: 8,
@@ -150,10 +160,11 @@ const holidays = [
       { name: "Old Town Walking Tour", cost: 15, carbon: 0, time: "Morning" },
       { name: "Prague Castle Visit", cost: 12, carbon: 1, time: "Afternoon" },
       { name: "Beer Tasting Tour", cost: 35, carbon: 1, time: "Evening" },
-      { name: "Boat Cruise on Vltava", cost: 20, carbon: 5, time: "Afternoon" }
+      { name: "Boat Cruise on Vltava", cost: 20, carbon: 5, time: "Afternoon" },
     ],
     tags: ["city", "culture", "budget", "nightlife", "history"],
-    description: "A fairy tale city with incredible architecture and cheap prices."
+    description:
+      "A fairy tale city with incredible architecture and cheap prices.",
   },
   {
     id: 9,
@@ -168,10 +179,11 @@ const holidays = [
       { name: "Sea Cave Kayaking", cost: 35, carbon: 0, time: "Morning" },
       { name: "Praia da Marinha Beach", cost: 0, carbon: 0, time: "Afternoon" },
       { name: "Seafood Cooking Class", cost: 50, carbon: 2, time: "Evening" },
-      { name: "Coastal Cliff Walk", cost: 0, carbon: 0, time: "Morning" }
+      { name: "Coastal Cliff Walk", cost: 0, carbon: 0, time: "Morning" },
     ],
     tags: ["beach", "nature", "food", "relaxation", "adventure"],
-    description: "Golden cliffs, hidden sea caves and the best seafood in Europe."
+    description:
+      "Golden cliffs, hidden sea caves and the best seafood in Europe.",
   },
   {
     id: 10,
@@ -186,137 +198,71 @@ const holidays = [
       { name: "Nyhavn Harbour Walk", cost: 0, carbon: 0, time: "Morning" },
       { name: "Bike City Tour", cost: 20, carbon: 0, time: "Afternoon" },
       { name: "Smørrebrød Food Tour", cost: 40, carbon: 1, time: "Afternoon" },
-      { name: "Tivoli Gardens", cost: 15, carbon: 1, time: "Evening" }
+      { name: "Tivoli Gardens", cost: 15, carbon: 1, time: "Evening" },
     ],
     tags: ["city", "cycling", "food", "culture", "design"],
-    description: "The world's happiest city with incredible food and design culture."
-  }
+    description:
+      "The world's happiest city with incredible food and design culture.",
+  },
 ];
 
-  let currentIndex = 0;
-  let likedHolidays = [];
+const fakeProfiles = [
+  {
+    id: 1,
+    name: "Maya",
+    age: 24,
+    image: "images/maya_image.webp",
+    likedHolidays: [1, 3, 8, 9],
+    bio: "Food lover, city enjoyer, always looking for an adventure",
+  },
+  {
+    id: 2,
+    name: "Jake",
+    age: 26,
+    image: "images/jake_image.jfif",
+    likedHolidays: [2, 6, 7, 10],
+    bio: "Hiker, nature nerd, happiest when off the beaten track.",
+  },
+  {
+    id: 3,
+    name: "Sofia",
+    age: 22,
+    image: "images/sofia_image.jfif",
+    likedHolidays: [3, 5, 7, 9],
+    bio: "Beach girl, sunset chaser, passionate about sustainable travel.",
+  },
+  {
+    id: 4,
+    name: "Tom",
+    age: 28,
+    image: "images/tom_image.jpg",
+    likedHolidays: [1, 2, 3, 4],
+    bio: "Budget traveller, cycling enthusiast, train over plane always.",
+  },
+  {
+    id: 5,
+    name: "Priya",
+    age: 23,
+    image: "images/priya_image.webp",
+    likedHolidays: [1, 4, 8, 10],
+    bio: "Culture vulture, museum lover, obsessed with European cities.",
+  },
+];
 
-  // Drag state
-  let startX = 0;
-  let currentX = 0;
-  let isDragging = false;
-  const card = document.getElementById("card");
+function findMatch(likedHolidaysIds) {
+  let bestMatch = null;
+  let highestOverlap = 0;
 
-  // Mouse events
-  card.addEventListener("mousedown", dragStart);
-  document.addEventListener("mousemove", dragMove);
-  document.addEventListener("mouseup", dragEnd);
+  fakeProfiles.forEach((profile) => {
+    const overlap = profile.likedHolidays.filter((id) =>
+      likedHolidaysIds.includes(id),
+    ).length;
 
-  function dragStart(e) {
-    isDragging = true;
-    startX = e.clientX;
-    card.style.transition = "none";
-  }
-
-  function dragMove(e) {
-    if (!isDragging) return;
-    currentX = e.clientX - startX;
-
-    const rotate = currentX * 0.1;
-    card.style.transform = `translateX(${currentX}px) rotate(${rotate}deg)`;
-
-    // Show like / dislike when dragging
-    if (currentX > 50) {
-      card.style.borderColor = "green";
-    } else if (currentX < -50) {
-      card.style.borderColor = "red";
-    } else {
-      card.style.borderColor = "#333";
+    if (overlap > highestOverlap) {
+      highestOverlap = overlap;
+      bestMatch = profile;
     }
-  }
-
-  function dragEnd(e) {
-    if (!isDragging) return;
-    isDragging = false;
-
-    const threshold = 100;
-
-    if (currentX > threshold) {
-      // Swiped right
-      flyOut("right");
-    } else if (currentX < -threshold) {
-      // Swiped left
-      flyOut("left");
-    } else {
-      // Snap to centre 
-      card.style.transition = "transform 0.3s ease";
-      card.style.transform = "translateX(0) rotate(0deg)";
-      card.style.borderColor = "#333";
-    }
-
-    currentX = 0;
-  }
-
-  function flyOut(direction) {
-    card.style.transition = "transform 0.4s ease, opacity 0.4s ease";
-
-    if (direction === "right") {
-      card.style.transform = "translateX(150%) rotate(20deg)";
-      likedHolidays.push(holidays[currentIndex].id);
-    } else {
-      card.style.transform = "translateX(-150%) rotate(-20deg)";
-    }
-
-    card.style.opacity = "0";
-
-    setTimeout(() => {
-      card.style.transition = "none";
-      card.style.transform = "translateX(0) rotate(0deg)";
-      card.style.opacity = "1";
-      card.style.borderColor = "#333";
-      currentIndex++;
-      loadCard(currentIndex);
-    }, 400);
-  }
-
-  function loadCard(index) {
-    if (index >= holidays.length) {
-      finish();
-      return;
-    }
-
-    const h = holidays[index];
-    if (h) {
-      document.getElementById("cardImage").src = h.image;
-      document.getElementById("cardDestination").textContent = h.destination;
-      document.getElementById("cardDescription").textContent = h.description;
-      document.getElementById("cardCost").textContent = "£" + h.cost;
-      document.getElementById("cardCarbon").textContent = h.carbonScore + "kg";
-      document.getElementById("cardDuration").textContent =
-        h.duration + " days";
-      document.getElementById("progress").textContent =
-        `Card ${index + 1} of ${holidays.length}`;
-    }
-  }
-
-  function swipe(direction) {
-    // if (direction === "like") {
-    //   likedHolidays.push(holidays[currentIndex].id);
-    // }
-    // currentIndex++;
-    // loadCard(currentIndex);
-    flyOut(direction === "like" ? "right": "left");
-  }
-
-  function finish() {
-    // localStorage.setItem("likedHolidays", JSON.stringify(likedHolidays));
-    // const result = findMatch(likedHolidays);
-    // localStorage.setItem("matchedProfile", JSON.stringify(result.match));
-    // localStorage.setItem("compatibility", result.compatibility);
-    // window.location.href = "match.html";
-  }
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") swipe("like");
-    if (e.key === "ArrowLeft") swipe("dislike");
   });
 
-  window.swipe = swipe;
-
-  loadCard(0);
-});
+  return { match: bestMatch };
+}
