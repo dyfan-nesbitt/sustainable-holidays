@@ -12,14 +12,29 @@
         { "preference": "Beach", "checked": false },
         { "preference": "Mountain", "checked": false },
         { "preference": "City", "checked": false },
-        { "preference": "Countryside", "checked": false }
+        { "preference": "Countryside", "checked": false },
+        { "preference": "Adventure", "checked": false },
+        { "preference": "Budget", "checked": false },
+        { "preference": "Culture", "checked": false },
+        { "preference": "Exotic", "checked": false },
+        { "preference": "Food", "checked": false },
+        { "preference": "History", "checked": false },
+        { "preference": "Hot", "checked": false },
+        { "preference": "Jungle", "checked": false },
+        { "preference": "Relaxation", "checked": false },
+        { "preference": "Scenic", "checked": false },
+        { "preference": "Walkable", "checked": false }
+
     ],
     "activities": [
         { "preference": "Zip Lining", "checked": false },
         { "preference": "Spas", "checked": false },
         { "preference": "Hiking", "checked": false },
         { "preference": "Camping", "checked": false },
-        { "preference": "Skiing", "checked": false }
+        { "preference": "Skiing", "checked": false },
+        { "preference": "Cycling", "checked": false },
+        { "preference": "Hiking", "checked": false },
+        { "preference": "Nightlife", "checked": false }
      
     ],
     "date": "",
