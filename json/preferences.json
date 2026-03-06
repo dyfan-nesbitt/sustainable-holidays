@@ -1,0 +1,27 @@
+{
+    "continents": [
+        { "preference": "Africa", "checked": false },
+        { "preference": "Asia", "checked": false },
+        { "preference": "Europe", "checked": false },
+        { "preference": "North America", "checked": false },
+        { "preference": "South America", "checked": false },
+        { "preference": "Australia", "checked": false },
+        { "preference": "Antarctica", "checked": false }
+    ],
+    "environments": [
+        { "preference": "Beach", "checked": false },
+        { "preference": "Mountain", "checked": false },
+        { "preference": "City", "checked": false },
+        { "preference": "Countryside", "checked": false }
+    ],
+    "activities": [
+        { "preference": "Zip Lining", "checked": false },
+        { "preference": "Spas", "checked": false },
+        { "preference": "Hiking", "checked": false },
+        { "preference": "Camping", "checked": false },
+        { "preference": "Skiing", "checked": false }
+     
+    ],
+    "date": "",
+    "groupSize": ""
+}
