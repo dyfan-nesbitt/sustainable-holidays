@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.compatibility {
+  font-size: 2rem;
+  color: green;
+  margin: 10px 0;
+}
+
+.shared-holidays {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.holiday-pill {
+  background: #1a2635;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 6px;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+button {
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: green;
+  color: white;
+  margin-top: 20px;
+}
