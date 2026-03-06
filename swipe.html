@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewUp - Find Your Holiday Crew</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="swipe.js" defer></script>
+</head>
+<body>
+    <h1>CrewUp</h1>
+    <p id="progress">Card 1 of ?</p>
+
+    <div class="card" id="card">
+        <img id="cardImage" src="" alt="">
+        <div class="card-body">
+            <h2 id="cardDestination"></h2>
+            <p id="cardDescription"></p>
+            <div class="stats">
+                <span id="cardCost"></span>
+                <span id="cardCarbon"></span>
+                <span id="cardDuration"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="dislikeButton" onclick="swipe('dislike')">Nope</button>
+        <button id="likeButton" onclick="swipe('like')">Like</button>
+    </div>
+
+</body>
+</html>
