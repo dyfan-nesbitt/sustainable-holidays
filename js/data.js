@@ -65,7 +65,7 @@ const holidays = [
       },
       { name: "Wild Camping", cost: 0, carbon: 0, time: "Evening" },
     ],
-    tags: ["nature", "hiking", "adventure", "budget"],
+    tags: ["nature", "hiking", "adventure", "budget", "cold",],
     description: "Raw, dramatic landscapes with almost zero carbon footprint.",
   },
   {
@@ -83,7 +83,7 @@ const holidays = [
       { name: "Street Food Tour", cost: 30, carbon: 1, time: "Evening" },
       { name: "Vondelpark Picnic", cost: 10, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["city", "culture", "cycling", "food"],
+    tags: ["city", "culture", "cycling", "food", "cold"],
     description: "Europe's most bike-friendly city with world class culture.",
   },
   {
@@ -125,7 +125,7 @@ const holidays = [
       { name: "Country Pub Dinner", cost: 30, carbon: 2, time: "Evening" },
       { name: "Cycle Trail", cost: 15, carbon: 0, time: "Morning" },
     ],
-    tags: ["nature", "hiking", "budget", "relaxation", "adventure"],
+    tags: ["nature", "hiking", "budget", "relaxation", "adventure", "cold"],
     description:
       "Britain's most beautiful national park right on your doorstep.",
   },
@@ -144,7 +144,7 @@ const holidays = [
       { name: "Geysir Geothermal Area", cost: 0, carbon: 0, time: "Morning" },
       { name: "Whale Watching", cost: 70, carbon: 20, time: "Morning" },
     ],
-    tags: ["adventure", "nature", "luxury", "unique", "scenic"],
+    tags: ["adventure", "nature", "cold", "unique", "scenic"],
     description: "Volcanoes, geysers, northern lights and pure wilderness.",
   },
   {
@@ -200,7 +200,7 @@ const holidays = [
       { name: "Smørrebrød Food Tour", cost: 40, carbon: 1, time: "Afternoon" },
       { name: "Tivoli Gardens", cost: 15, carbon: 1, time: "Evening" },
     ],
-    tags: ["city", "cycling", "food", "culture", "design"],
+    tags: ["city", "cycling", "food", "culture", "Cold", "Unique"],
     description:
       "The world's happiest city with incredible food and design culture.",
   },
@@ -224,7 +224,7 @@ const holidays = [
       { name: "Robben Island Tour", cost: 50, carbon: 10, time: "Day Trip" },
       { name: "Cape of Good Hope", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["City", "Nature", "Culture", "Beach", "Adventure"],
+    tags: ["City", "Nature", "Culture", "Beach", "Adventure", "Hot"],
     description:
       "Cape Town is a vibrant city with stunning natural beauty, rich history, and diverse culture.",
   },
