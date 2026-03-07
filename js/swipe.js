@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   let currentIndex = 0;
   let likedHolidays = [];
 
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Swiped left
       flyOut("left");
     } else {
-      // Snap to centre 
+      // Snap to centre
       card.style.transition = "transform 0.3s ease";
       card.style.transform = "translateX(0) rotate(0deg)";
       card.style.borderColor = "#333";
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (direction === "right") {
       card.style.transform = "translateX(150%) rotate(20deg)";
-      likedHolidays.push(holidays[currentIndex].id);
+      likedHolidays.push(filteredHolidays[currentIndex].id);
     } else {
       card.style.transform = "translateX(-150%) rotate(-20deg)";
     }
@@ -82,12 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function loadCard(index) {
-    if (index >= holidays.length) {
+    if (index >= filteredHolidays.length) {
       finish();
       return;
     }
 
-    const h = holidays[index];
+    const h = filteredHolidays[index];
     if (h) {
       document.getElementById("cardImage").src = h.image;
       document.getElementById("cardDestination").textContent = h.destination;
@@ -97,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("cardDuration").textContent =
         h.duration + " days";
       document.getElementById("progress").textContent =
-        `Card ${index + 1} of ${holidays.length}`;
+        `Card ${index + 1} of ${filteredHolidays.length}`;
     }
   }
 
@@ -107,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
     // currentIndex++;
     // loadCard(currentIndex);
-    flyOut(direction === "like" ? "right": "left");
+    flyOut(direction === "like" ? "right" : "left");
   }
 
   function finish() {
@@ -124,6 +123,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.swipe = swipe;
+
+  // Read preferences from localStorage
+  const selectedPreferences =
+    JSON.parse(localStorage.getItem("selectedPreferences")) || [];
+  const groupSize = localStorage.getItem("groupSize");
+
+  // Filter holidays by preferences
+  const filteredHolidays =
+    selectedPreferences.length === 0
+      ? holidays // if no preferences show all
+      : holidays.filter((holiday) => {
+          const tags = holiday.tags.map((t) => t.toLowerCase());
+          return selectedPreferences.some((pref) =>
+            tags.includes(pref.toLowerCase()),
+          );
+        });
 
   loadCard(0);
 });
