@@ -123,9 +123,4 @@ document.addEventListener('DOMContentLoaded', function() {
     groupSizeSelect.addEventListener('change', function() {
         updatePreferences();
     });
-    
-    // Proceed button to navigate to results page
-    proceedButton.addEventListener('click', function() {
-        window.location.href = "results.html";
-    });
 });

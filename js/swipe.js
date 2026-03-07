@@ -133,12 +133,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const filteredHolidays =
     selectedPreferences.length === 0
       ? holidays // if no preferences show all
-      : holidays.filter((holiday) => {
-          const tags = holiday.tags.map((t) => t.toLowerCase());
-          return selectedPreferences.some((pref) =>
-            tags.includes(pref.toLowerCase()),
-          );
-        });
+      : holidays
+          .filter((holiday) => {
+            const tags = holiday.tags.map((t) => t.toLowerCase());
+            return selectedPreferences.some((pref) =>
+              tags.includes(pref.toLowerCase()),
+            );
+          })
+          .sort((a, b) => {
+            // Count num preferences that match each holiday
+            const aMatches = a.tags.filter((t) =>
+              selectedPreferences.some(
+                (p) => p.toLowerCase() === t.toLowerCase(),
+              ),
+            ).length;
+            const bMatches = b.tags.filter((t) =>
+              selectedPreferences.some(
+                (p) => p.toLowerCase() === t.toLowerCase(),
+              ),
+            ).length;
+            return bMatches - aMatches; // highest matches first
+          })
+          .slice(0, 10); // top 10
 
   loadCard(0);
 });

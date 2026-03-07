@@ -13,7 +13,7 @@ if (!match) {
     const shared = likedHolidays.filter((id) => match.likedHolidays.includes(id));
 
     document.getElementById("compatibilityScore").textContent =
-        `You have ${shared.length} out of ${holidays.length} in common with ${match.name}`;
+        `You have ${shared.length} holidays in common with ${match.name}`;
 
     // Show shared
     const container = document.getElementById("sharedHolidays");

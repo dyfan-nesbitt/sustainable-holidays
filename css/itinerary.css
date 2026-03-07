@@ -6,6 +6,10 @@ body {
   padding: 20px;
   background-image: linear-gradient(to left, #ffaaf7, #fff5ae);
 }
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 0px solid #e0e0e0;
+}
 .destination-image {
   width: 100%;
   max-width: 500px;
