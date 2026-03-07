@@ -34,7 +34,6 @@
         { "preference": "Camping", "checked": false },
         { "preference": "Skiing", "checked": false },
         { "preference": "Cycling", "checked": false },
-        { "preference": "Hiking", "checked": false },
         { "preference": "Nightlife", "checked": false }
      
     ],
