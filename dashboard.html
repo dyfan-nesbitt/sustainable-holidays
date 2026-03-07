@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewUp - Travel Agent Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <img class="banner-image" src="images/CrewUp_banner.png" alt="banner image">
+    </header>
+
+    <div class="container">
+        <h1>Travel Agent Dashboard</h1>
+
+        <div class="stat-card">
+            <h3>Total Bookings</h3>
+            <p id="totalBookings"></p>
+        </div>
+        <div class="stat-card">
+            <h3>Avg Carbon Score</h3>
+            <p id="avgCarbon"></p>
+        </div>
+
+        <h2>Most Popular Destinations</h2>
+        <canvas id="destinationsChart"></canvas>
+
+        <h2>Carbon Ratings Breakdown</h2>
+        <canvas id="carbonChart"></canvas>
+
+        <h2>Transport Types</h2>
+        <canvas id="transportChart"></canvas>
+
+        <h2>Recent Bookings</h2>
+        <table id="bookingsTable">
+            <thead>
+                <tr>
+                    <th>Traveller</th>
+                    <th>Destination</th>
+                    <th>Cost</th>
+                    <th>Carbon</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody id="bookingsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

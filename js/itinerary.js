@@ -12,6 +12,21 @@ const chosen = sharedHolidayObjects.reduce((best, current) =>
   current.carbonScore < best.carbonScore ? current : best,
 );
 
+const startDate = localStorage.getItem("holidayStartDate");
+const endDate = localStorage.getItem("holidayEndDate");
+
+// Calc duration from dates
+let duration = chosen.duration; 
+if (startDate && endDate) {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const diffMs = end - start;
+    const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+    if (diffDays > 0) {
+        duration = diffDays;
+    }
+}
+
 // Destination
 document.getElementById("destinationName").textContent = chosen.destination;
 document.getElementById("destinationImage").src = chosen.image;
@@ -69,7 +84,7 @@ const carbonClass =
       ? "carbon-amber"
       : "carbon-red";
 
-document.getElementById("totalCost").textContent = `Total: £${totalCost}`;
+document.getElementById("totalCost").textContent = `Total: £${totalCost} for ${duration} days`;
 document.getElementById("totalCarbon").innerHTML =
   `Carbon: <span class="${carbonClass}">${totalCarbon}kg CO2</span>`;
 
