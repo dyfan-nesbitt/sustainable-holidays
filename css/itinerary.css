@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(to left, #ffaaf7, #fff5ae);
+}
+.destination-image {
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #333;
+  margin: 10px 0;
+}
+.crew {
+  display: flex;
+  gap: 10px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 4px;
+  margin: 16px 0;
+}
+.crew-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.crew-member img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  object-fit: cover;
+}
+.activity {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.activity-number {
+    background: #4ade80;
+    color:#111;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.activity-time {
+  font-size: 0.75rem;
+  color: #000;
+}
+.activity-name {
+  font-size: 1rem;
+}
+.activity-right {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #000;
+}
+.totals {
+  width: 100%;
+  max-width: 500px;
+  background: #1a2635;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#map {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+.carbon-green {
+  color: #4ade80;
+}
+.carbon-amber {
+  color: #fbbf24;
+}
+.carbon-red {
+  color: #f87171;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrewUp - Your Itinerary</title>  
+    
+    <link rel="stylesheet" href="css/itinerary.css">
+</head>
+<body>
+
+    <h1 id="destinationName"></h1>
+    <img class="destination-image" id="destinationImage" src="" alt="">
+
+    <h3>Your Crew</h3>
+    <div class="crew" id="crew"></div>
+
+    <h3>Activities</h3>
+    <div id="activities"></div>
+
+    <div class="totals">
+        <span id="totalCost"></span>
+        <span id="totalCarbon"></span>
+    </div>
+
+    <!-- Google Maps -->
+    <h3>Where you're going</h3>
+    <div id="map"></div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/itinerary.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vf048w1uHcHXb8-Ro4Psva0TejZ0Qf4&callback=initMap" async defer></script>
+</body>
+</html>

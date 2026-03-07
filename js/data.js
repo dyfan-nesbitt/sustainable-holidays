@@ -197,7 +197,7 @@ const holidays = [
     activities: [
       { name: "Nyhavn Harbour Walk", cost: 0, carbon: 0, time: "Morning" },
       { name: "Bike City Tour", cost: 20, carbon: 0, time: "Afternoon" },
-      { name: "Smørrebrød Food Tour", cost: 40, carbon: 1, time: "Afternoon" },
+      { name: "Smorrebrod Food Tour", cost: 40, carbon: 1, time: "Afternoon" },
       { name: "Tivoli Gardens", cost: 15, carbon: 1, time: "Evening" },
     ],
     tags: ["city", "cycling", "food", "culture", "Cold", "Unique"],
@@ -697,7 +697,7 @@ const fakeProfiles = [
     id: 5,
     name: "Priya",
     age: 23,
-    image: "images/priya_image.webp",
+    image: "images/priya_image.jpg",
     likedHolidays: [1, 4, 8, 10],
     bio: "Culture vulture, museum lover, obsessed with European cities.",
   },
