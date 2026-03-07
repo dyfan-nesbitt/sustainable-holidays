@@ -10,7 +10,7 @@
     ],
     "environments": [
         { "preference": "Beach", "checked": false },
-        { "preference": "Mountain", "checked": false },
+        { "preference": "Mountains", "checked": false },
         { "preference": "City", "checked": false },
         { "preference": "Countryside", "checked": false },
         { "preference": "Adventure", "checked": false },

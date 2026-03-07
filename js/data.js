@@ -1572,7 +1572,7 @@ const fakeProfiles = [
     name: "Maya",
     age: 24,
     image: "images/maya_image.webp",
-    likedHolidays: [1, 11, 21, 31, 41],
+    likedHolidays: [7, 23, 38, 14, 45],
     bio: "Food lover, city enjoyer, always looking for an adventure",
   },
   {
@@ -1580,7 +1580,7 @@ const fakeProfiles = [
     name: "Jake",
     age: 26,
     image: "images/jake_image.jfif",
-    likedHolidays: [2, 12, 22, 32, 42],
+    likedHolidays: [3, 19, 42, 27, 11],
     bio: "Hiker, nature nerd, happiest when off the beaten track.",
   },
   {
@@ -1588,7 +1588,7 @@ const fakeProfiles = [
     name: "Sofia",
     age: 22,
     image: "images/sofia_image.jfif",
-    likedHolidays: [3, 13, 23, 33, 43],
+    likedHolidays: [50, 6, 31, 17, 24],
     bio: "Beach girl, sunset chaser, passionate about sustainable travel.",
   },
   {
@@ -1596,7 +1596,7 @@ const fakeProfiles = [
     name: "Tom",
     age: 28,
     image: "images/tom_image.jpg",
-    likedHolidays: [4, 14, 24, 34, 44],
+    likedHolidays: [9, 36, 2, 48, 13],
     bio: "Budget traveller, cycling enthusiast, train over plane always.",
   },
   {
@@ -1604,14 +1604,15 @@ const fakeProfiles = [
     name: "Priya",
     age: 23,
     image: "images/priya_image.webp",
-    likedHolidays: [5, 15, 25, 35, 45],
+    likedHolidays: [44, 8, 29, 15, 33],
     bio: "Culture vulture, museum lover, obsessed with European cities.",
-  },  {
+  },
+  {
     id: 6,
     name: "Lena",
     age: 27,
     image: "images/lena_image.webp",
-    likedHolidays: [6, 16, 26, 36, 46],
+    likedHolidays: [20, 37, 5, 46, 12],
     bio: "Foodie with a passport full of stamps, equally happy in a Tokyo ramen bar or a Moroccan souk.",
   },
   {
@@ -1619,7 +1620,7 @@ const fakeProfiles = [
     name: "Carlos",
     age: 31,
     image: "images/carlos_image.webp",
-    likedHolidays: [7, 17, 27, 37, 47],
+    likedHolidays: [1, 26, 43, 10, 34],
     bio: "Mountain chaser and ocean diver. If there's a summit or a reef nearby, I'm there.",
   },
   {
@@ -1627,7 +1628,7 @@ const fakeProfiles = [
     name: "Amara",
     age: 25,
     image: "images/amara_image.webp",
-    likedHolidays: [8, 18, 28, 38, 48],
+    likedHolidays: [49, 16, 4, 22, 39],
     bio: "History obsessed and perpetually curious. Ancient ruins over nightclubs every time.",
   },
   {
@@ -1635,7 +1636,7 @@ const fakeProfiles = [
     name: "Finn",
     age: 29,
     image: "images/finn_image.webp",
-    likedHolidays: [9, 19, 29, 39, 49],
+    likedHolidays: [28, 41, 18, 35, 6],
     bio: "Adrenaline junkie who can't sit still. Bungee jumping, hiking, surfing — yes to all.",
   },
   {
@@ -1643,7 +1644,7 @@ const fakeProfiles = [
     name: "Isla",
     age: 23,
     image: "images/isla_image.webp",
-    likedHolidays: [10, 20, 30, 40, 50],
+    likedHolidays: [47, 21, 32, 40, 25],
     bio: "Luxury on a budget is my speciality. Rosé at sunset, fresh pasta, warm water — that's the dream.",
   }
   

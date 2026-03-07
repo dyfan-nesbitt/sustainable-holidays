@@ -56,6 +56,8 @@ chosen.activities.forEach((activity, index) => {
   activitiesContainer.appendChild(div);
 });
 
+totalCost += chosen.cost;
+
 // Add base carbon from transport
 totalCarbon += chosen.carbonScore;
 
