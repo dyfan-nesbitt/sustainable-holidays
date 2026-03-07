@@ -23,7 +23,8 @@
         { "preference": "Jungle", "checked": false },
         { "preference": "Relaxation", "checked": false },
         { "preference": "Scenic", "checked": false },
-        { "preference": "Walkable", "checked": false }
+        { "preference": "Walkable", "checked": false },
+        { "preference": "Cold", "checked": false }
 
     ],
     "activities": [
