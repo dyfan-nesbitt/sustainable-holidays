@@ -5,7 +5,7 @@
         { "preference": "Europe", "checked": false },
         { "preference": "North America", "checked": false },
         { "preference": "South America", "checked": false },
-        { "preference": "Australia", "checked": false },
+        { "preference": "Oceania", "checked": false },
         { "preference": "Antarctica", "checked": false }
     ],
     "environments": [
