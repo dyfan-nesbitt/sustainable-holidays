@@ -812,7 +812,7 @@ const holidays = [
   {
     id: 30,
     destination: "Kuala Lumpur, Malaysia",
-    image: "images/kuala-lumpur.webp",
+    image: "images/kuala-lumput.webp",
     duration: 6,
     cost: 1100,
     carbonScore: 4099,
@@ -1572,7 +1572,7 @@ const fakeProfiles = [
     name: "Maya",
     age: 24,
     image: "images/maya_image.webp",
-    likedHolidays: [1, 3, 8, 9],
+    likedHolidays: [],
     bio: "Food lover, city enjoyer, always looking for an adventure",
   },
   {
@@ -1580,7 +1580,7 @@ const fakeProfiles = [
     name: "Jake",
     age: 26,
     image: "images/jake_image.jfif",
-    likedHolidays: [2, 6, 7, 10],
+    likedHolidays: [],
     bio: "Hiker, nature nerd, happiest when off the beaten track.",
   },
   {
@@ -1588,7 +1588,7 @@ const fakeProfiles = [
     name: "Sofia",
     age: 22,
     image: "images/sofia_image.jfif",
-    likedHolidays: [3, 5, 7, 9],
+    likedHolidays: [],
     bio: "Beach girl, sunset chaser, passionate about sustainable travel.",
   },
   {
@@ -1596,7 +1596,7 @@ const fakeProfiles = [
     name: "Tom",
     age: 28,
     image: "images/tom_image.jpg",
-    likedHolidays: [1, 2, 3, 4],
+    likedHolidays: [],
     bio: "Budget traveller, cycling enthusiast, train over plane always.",
   },
   {
@@ -1604,9 +1604,49 @@ const fakeProfiles = [
     name: "Priya",
     age: 23,
     image: "images/priya_image.webp",
-    likedHolidays: [1, 4, 8, 10],
+    likedHolidays: [],
     bio: "Culture vulture, museum lover, obsessed with European cities.",
+  },  {
+    id: 6,
+    name: "Lena",
+    age: 27,
+    image: "images/lena_image.webp",
+    likedHolidays: [14, 40, 17, 3, 31],
+    bio: "Foodie with a passport full of stamps, equally happy in a Tokyo ramen bar or a Moroccan souk.",
   },
+  {
+    id: 7,
+    name: "Carlos",
+    age: 31,
+    image: "images/carlos_image.webp",
+    likedHolidays: [],
+    bio: "Mountain chaser and ocean diver. If there's a summit or a reef nearby, I'm there.",
+  },
+  {
+    id: 8,
+    name: "Amara",
+    age: 25,
+    image: "images/amara_image.webp",
+    likedHolidays: [],
+    bio: "History obsessed and perpetually curious. Ancient ruins over nightclubs every time.",
+  },
+  {
+    id: 9,
+    name: "Finn",
+    age: 29,
+    image: "images/finn_image.webp",
+    likedHolidays: [],
+    bio: "Adrenaline junkie who can't sit still. Bungee jumping, hiking, surfing — yes to all.",
+  },
+  {
+    id: 10,
+    name: "Isla",
+    age: 23,
+    image: "images/isla_image.webp",
+    likedHolidays: [],
+    bio: "Luxury on a budget is my speciality. Rosé at sunset, fresh pasta, warm water — that's the dream.",
+  }
+  
 ];
 
 function findMatch(likedHolidaysIds) {
