@@ -10,7 +10,6 @@ var groupSizeSelect = document.getElementById('groupSizeSelect');
 var proceedButton = document.getElementById('proceedButton');
 var preferences;
 
-// Load preferences from JSON file
 fetch('JSON/preferences.json')
     .then(response => response.json())
     .then(data => {
@@ -22,7 +21,7 @@ fetch('JSON/preferences.json')
 
 
 function updatePreferences() {
-    // Clear all lists
+    
     uncheckedContinents.innerHTML = "";
     checkedContinents.innerHTML = "";
     uncheckedEnvironments.innerHTML = "";
@@ -51,7 +50,7 @@ function updatePreferences() {
         }
     });
 
-    // Handle environments
+    //environments
     preferences.environments.forEach(function (item, index) {
         var preferenceElement = document.createElement("li");
         preferenceElement.textContent = item.preference;
@@ -72,7 +71,7 @@ function updatePreferences() {
         }
     });
 
-    // Handle activities
+    //activities
     preferences.activities.forEach(function (item, index) {
         var preferenceElement = document.createElement("li");
         preferenceElement.textContent = item.preference;
@@ -93,7 +92,7 @@ function updatePreferences() {
         }
     });
 
-    // Save selected preferences to localStorage
+    // Save the preferences to localStorage
     var selectedPreferences = [];
     ['continents', 'environments', 'activities'].forEach(function(category) {
         preferences[category].forEach(function(item) {
@@ -103,7 +102,7 @@ function updatePreferences() {
         });
     });
 
-    // Save to localStorage for access on other pages
+    //local storage
     localStorage.setItem('selectedPreferences', JSON.stringify(selectedPreferences));
     localStorage.setItem('holidayStartDate', holidayStartDateInput.value);
     localStorage.setItem('holidayEndDate', holidayEndDateInput.value);

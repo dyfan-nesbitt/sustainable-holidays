@@ -1,4 +1,238 @@
-.continents-style{
-    display: flex;
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
     
+}   
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 0px solid #e0e0e0;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 150px;
+    /* max-width: 900px; */
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #fff4af, #ffaff2);
+}
+
+.questionnaire-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.section-title,
+.date-section,
+.group-size-section,
+.proceed-section {
+    grid-column: 1 / -1;
+}
+
+.continents-style,
+.environments-style,
+.activities-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.continents-style .section,
+.environments-style .section,
+.activities-style .section {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: px;
+}
+
+.section {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 20px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.list li input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: #555;
+}
+
+.date-section {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    align-items: center;
+    gap: 12px 16px;
+}
+
+.date-section .section-heading {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.group-size-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.form-input,
+.form-select {
+    padding: 8px 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fafafa;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus {
+    border-color: #999;
+    background-color: #ffffff;
+}
+
+.form-select {
+    width: auto;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+.proceed-section {
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.proceed-button {
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #333;
+    transition: opacity 0.2s;
+}
+
+.proceed-button:hover {
+    opacity: 0.85;
+}
+
+.proceed-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer {
+    padding: 20px 40px;
+    background-image: linear-gradient(to right, #fff4af, #ffaff2);
+    border-top: 0px solid #e0e0e0;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .questionnaire-form {
+        grid-template-columns: 1fr;
+    }
+
+    .continents-style,
+    .environments-style,
+    .activities-style {
+        grid-column: 1 / -1;
+    }
+
+    .main-content {
+        padding: 24px 12px;
+    }
+
+    .date-section {
+        grid-template-columns: 1fr;
+    }
+
+    .proceed-section {
+        justify-content: stretch;
+    }
+
+    .proceed-button {
+        width: 100%;
+        text-align: center;
+    }
 }
