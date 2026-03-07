@@ -8,12 +8,19 @@ body {
   color: white;
 }
 
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+} 
+
 .site-header {
     background-color: #ffffff;
     border-bottom: 0px solid #e0e0e0;
 }
 
-img {
+#matchImage {
   width: 120px;
   height: 120px;
   border-radius: 50%;
