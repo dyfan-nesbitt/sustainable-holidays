@@ -93,8 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("cardDescription").textContent = h.description;
       document.getElementById("cardCost").textContent = "£" + h.cost;
       document.getElementById("cardCarbon").textContent = h.carbonScore + "kg";
-      document.getElementById("cardDuration").textContent =
-        h.duration + " days";
       document.getElementById("progress").textContent =
         `Card ${index + 1} of ${filteredHolidays.length}`;
     }
