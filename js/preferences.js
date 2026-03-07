@@ -106,7 +106,6 @@ function updatePreferences() {
     localStorage.setItem('selectedPreferences', JSON.stringify(selectedPreferences));
     localStorage.setItem('holidayStartDate', holidayStartDateInput.value);
     localStorage.setItem('holidayEndDate', holidayEndDateInput.value);
-    localStorage.setItem('groupSize', groupSizeSelect.value);
 }
 
 // Initialize on page load
@@ -117,10 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     holidayEndDateInput.addEventListener('change', function() {
-        updatePreferences();
-    });
-    
-    groupSizeSelect.addEventListener('change', function() {
         updatePreferences();
     });
 });

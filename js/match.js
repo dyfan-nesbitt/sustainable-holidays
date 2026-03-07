@@ -4,7 +4,11 @@ const compatibility = localStorage.getItem("compatibility");
 const likedHolidays = JSON.parse(localStorage.getItem("likedHolidays"));
 
 if (!match) {
-    document.body.innerHTML = "<h2>No match found — go back and swipe!</h2>";
+    document.body.innerHTML = `
+    <header class="site-header">
+      <img class="banner-image" src="images/CrewUp_banner.png" alt="" />
+    </header>
+    <h2>No match found — go back and swipe!</h2>`;
 } else {
     document.getElementById("matchImage").src = match.image;
     document.getElementById("matchName").textContent = match.name + ", " + match.age;
