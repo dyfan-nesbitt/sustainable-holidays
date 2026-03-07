@@ -22,10 +22,11 @@ const holidays = [
       { name: "Local Food Market", cost: 25, carbon: 0, time: "Afternoon" },
       { name: "Sunset Viewpoint Hike", cost: 0, carbon: 0, time: "Evening" },
     ],
-    tags: ["city", "walking", "food", "hot", "europe"],
+    tags: ["City", "Culture", "Food", "History", "Walking", "Scenic", "Hot"],
     description:
       "Vibrant city built on seven hills overlooking the Tagus River.",
   },
+
   {
     id: 2,
     destination: "Barcelona, Spain",
@@ -41,10 +42,11 @@ const holidays = [
       { name: "Tapas Cooking Class", cost: 45, carbon: 2, time: "Evening" },
       { name: "Park Guell Visit", cost: 10, carbon: 1, time: "Morning" },
     ],
-    tags: ["city", "walking", "food", "hot", "europe"],
+    tags: ["City", "Beach", "Culture", "Food", "Nightlife", "Walking", "Hot"],
     description:
-      "Vibrant city built on seven hills overlooking the Tagus River.",
+      "Vibrant Mediterranean city known for Gaudí architecture and beaches.",
   },
+
   {
     id: 3,
     destination: "Scottish Highlands, UK",
@@ -65,9 +67,18 @@ const holidays = [
       },
       { name: "Wild Camping", cost: 0, carbon: 0, time: "Evening" },
     ],
-    tags: ["nature", "hiking", "adventure", "budget", "cold",],
+    tags: [
+      "Nature",
+      "Mountains",
+      "Hiking",
+      "Adventure",
+      "Scenic",
+      "Wildlife",
+      "Cold",
+    ],
     description: "Raw, dramatic landscapes with almost zero carbon footprint.",
   },
+
   {
     id: 4,
     destination: "Amsterdam, Netherlands",
@@ -83,9 +94,18 @@ const holidays = [
       { name: "Street Food Tour", cost: 30, carbon: 1, time: "Evening" },
       { name: "Vondelpark Picnic", cost: 10, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["city", "culture", "cycling", "food", "cold"],
+    tags: [
+      "City",
+      "Culture",
+      "Cycling",
+      "Food",
+      "Walking",
+      "Nightlife",
+      "Cold",
+    ],
     description: "Europe's most bike-friendly city with world class culture.",
   },
+
   {
     id: 5,
     destination: "Amalfi Coast, Italy",
@@ -101,10 +121,11 @@ const holidays = [
       { name: "Pasta Making Class", cost: 40, carbon: 1, time: "Evening" },
       { name: "Positano Beach", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["beach", "luxury", "food", "scenic", "relaxation"],
+    tags: ["Beach", "Scenic", "Food", "Luxury", "Relaxation", "Hiking", "Hot"],
     description:
       "Stunning cliffside villages, crystal water and incredible food.",
   },
+
   {
     id: 6,
     destination: "Lake District, UK",
@@ -125,10 +146,20 @@ const holidays = [
       { name: "Country Pub Dinner", cost: 30, carbon: 2, time: "Evening" },
       { name: "Cycle Trail", cost: 15, carbon: 0, time: "Morning" },
     ],
-    tags: ["nature", "hiking", "budget", "relaxation", "adventure", "cold"],
+    tags: [
+      "Nature",
+      "Mountains",
+      "Hiking",
+      "Cycling",
+      "Relaxation",
+      "Scenic",
+      "Cold",
+      "Budget",
+    ],
     description:
       "Britain's most beautiful national park right on your doorstep.",
   },
+
   {
     id: 7,
     destination: "Reykjavik, Iceland",
@@ -144,9 +175,10 @@ const holidays = [
       { name: "Geysir Geothermal Area", cost: 0, carbon: 0, time: "Morning" },
       { name: "Whale Watching", cost: 70, carbon: 20, time: "Morning" },
     ],
-    tags: ["adventure", "nature", "cold", "unique", "scenic"],
+    tags: ["Nature", "Adventure", "Scenic", "Wildlife", "Unique", "Cold"],
     description: "Volcanoes, geysers, northern lights and pure wilderness.",
   },
+
   {
     id: 8,
     destination: "Prague, Czech Republic",
@@ -162,10 +194,19 @@ const holidays = [
       { name: "Beer Tasting Tour", cost: 35, carbon: 1, time: "Evening" },
       { name: "Boat Cruise on Vltava", cost: 20, carbon: 5, time: "Afternoon" },
     ],
-    tags: ["city", "culture", "budget", "nightlife", "history"],
+    tags: [
+      "City",
+      "Culture",
+      "History",
+      "Walking",
+      "Nightlife",
+      "Budget",
+      "Cold",
+    ],
     description:
       "A fairy tale city with incredible architecture and cheap prices.",
   },
+
   {
     id: 9,
     destination: "Algarve, Portugal",
@@ -181,10 +222,19 @@ const holidays = [
       { name: "Seafood Cooking Class", cost: 50, carbon: 2, time: "Evening" },
       { name: "Coastal Cliff Walk", cost: 0, carbon: 0, time: "Morning" },
     ],
-    tags: ["beach", "nature", "food", "relaxation", "adventure"],
+    tags: [
+      "Beach",
+      "Nature",
+      "Scenic",
+      "Food",
+      "Relaxation",
+      "Adventure",
+      "Hot",
+    ],
     description:
       "Golden cliffs, hidden sea caves and the best seafood in Europe.",
   },
+
   {
     id: 10,
     destination: "Copenhagen, Denmark",
@@ -200,10 +250,11 @@ const holidays = [
       { name: "Smørrebrød Food Tour", cost: 40, carbon: 1, time: "Afternoon" },
       { name: "Tivoli Gardens", cost: 15, carbon: 1, time: "Evening" },
     ],
-    tags: ["city", "cycling", "food", "culture", "Cold", "Unique"],
+    tags: ["City", "Culture", "Cycling", "Food", "Walking", "Cold"],
     description:
       "The world's happiest city with incredible food and design culture.",
   },
+
   {
     id: 11,
     destination: "Cape Town, South Africa",
@@ -214,7 +265,7 @@ const holidays = [
     carbonRating: "red",
     transport: "flight",
     activities: [
-      { name: "Hoke the Lion's head", cost: 0, carbon: 0, time: "Afternoon" },
+      { name: "Hike Lion's Head", cost: 0, carbon: 0, time: "Afternoon" },
       {
         name: "Table Mountain Cable Car",
         cost: 20,
@@ -224,10 +275,20 @@ const holidays = [
       { name: "Robben Island Tour", cost: 50, carbon: 10, time: "Day Trip" },
       { name: "Cape of Good Hope", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["City", "Nature", "Culture", "Beach", "Adventure", "Hot"],
+    tags: [
+      "City",
+      "Nature",
+      "Beach",
+      "Hiking",
+      "Adventure",
+      "Scenic",
+      "Wildlife",
+      "Hot",
+    ],
     description:
       "Cape Town is a vibrant city with stunning natural beauty, rich history, and diverse culture.",
   },
+
   {
     id: 12,
     destination: "Rio De Janeiro, Brazil",
@@ -248,10 +309,20 @@ const holidays = [
       { name: "Sugar Loaf Mountain", cost: 20, carbon: 10, time: "Morning" },
       { name: "Selarón Steps", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["Jungle", "Nature", "Culture", "Beach", "Adventure"],
+    tags: [
+      "City",
+      "Beach",
+      "Nature",
+      "Adventure",
+      "Culture",
+      "Nightlife",
+      "Scenic",
+      "Hot",
+    ],
     description:
-      "Rio de Janeiro is a vibrant city known for its stunning beaches, lively culture",
+      "Rio de Janeiro is a vibrant city known for its stunning beaches and lively culture.",
   },
+
   {
     id: 13,
     destination: "Berlin, Germany",
@@ -260,16 +331,25 @@ const holidays = [
     cost: 800,
     carbonScore: 200,
     carbonRating: "green",
-    transport: "Train",
+    transport: "train",
     activities: [
       { name: "Berlin Wall Tour", cost: 10, carbon: 1, time: "Morning" },
       { name: "Museum Island", cost: 20, carbon: 1, time: "Afternoon" },
       { name: "Brandenburg Gate", cost: 0, carbon: 0, time: "Morning" },
       { name: "Street Art Tour", cost: 15, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["City", "Walkable", "Food", "Culture", "History"],
-    description: "",
+    tags: [
+      "City",
+      "Culture",
+      "History",
+      "Food",
+      "Nightlife",
+      "Walking",
+      "Cold",
+    ],
+    description: "A beautiful city with a rich history and vibrant culture.",
   },
+
   {
     id: 14,
     destination: "Tokyo, Japan",
@@ -285,10 +365,11 @@ const holidays = [
       { name: "Sushi Making Class", cost: 60, carbon: 2, time: "Evening" },
       { name: "Mount Fuji Day Trip", cost: 50, carbon: 15, time: "Day Trip" },
     ],
-    tags: ["city", "culture", "food", "adventure", "luxury"],
+    tags: ["City", "Culture", "Food", "Nightlife", "Unique", "Luxury"],
     description:
-      "A dazzling blend of ancient traditions and cutting-edge technology in the heart of Japan.",
+      "A dazzling blend of ancient traditions and cutting-edge technology.",
   },
+
   {
     id: 15,
     destination: "Bangkok, Thailand",
@@ -309,10 +390,11 @@ const holidays = [
         time: "Evening",
       },
     ],
-    tags: ["city", "culture", "food", "budget", "adventure"],
+    tags: ["City", "Culture", "Food", "Nightlife", "Budget", "Hot"],
     description:
-      "The vibrant capital of Thailand with ornate temples, bustling markets, and world-class cuisine.",
+      "The vibrant capital of Thailand with ornate temples and bustling markets.",
   },
+
   {
     id: 16,
     destination: "Sydney, Australia",
@@ -328,10 +410,11 @@ const holidays = [
       { name: "Blue Mountains Hiking", cost: 35, carbon: 10, time: "Day Trip" },
       { name: "Harbor Bridge Climb", cost: 70, carbon: 2, time: "Evening" },
     ],
-    tags: ["beach", "nature", "adventure", "city", "luxury"],
+    tags: ["City", "Beach", "Nature", "Adventure", "Scenic", "Luxury", "Hot"],
     description:
-      "Australia's stunning harbor city surrounded by beautiful beaches and world-famous landmarks.",
+      "Australia's stunning harbor city surrounded by beautiful beaches.",
   },
+
   {
     id: 17,
     destination: "Marrakech, Morocco",
@@ -347,10 +430,10 @@ const holidays = [
       { name: "Moroccan Cooking Class", cost: 35, carbon: 1, time: "Evening" },
       { name: "Jemaa el-Fnaa Square", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["culture", "adventure", "food", "exotic", "budget"],
-    description:
-      "A magical city of vibrant markets, stunning palaces, and desert adventures in North Africa.",
+    tags: ["City", "Culture", "Food", "History", "Adventure", "Hot", "Unique"],
+    description: "A magical city of vibrant markets and desert adventures.",
   },
+
   {
     id: 18,
     destination: "Istanbul, Turkey",
@@ -371,10 +454,11 @@ const holidays = [
         time: "Afternoon",
       },
     ],
-    tags: ["city", "culture", "history", "food", "luxury"],
+    tags: ["City", "Culture", "History", "Food", "Scenic", "Unique"],
     description:
-      "A transcontinental city where ancient history meets modern life across the Bosphorus.",
+      "A transcontinental city where ancient history meets modern life.",
   },
+
   {
     id: 19,
     destination: "Mexico City, Mexico",
@@ -400,10 +484,10 @@ const holidays = [
         time: "Evening",
       },
     ],
-    tags: ["city", "culture", "food", "history", "adventure"],
-    description:
-      "A vibrant metropolis rich with pre-Hispanic heritage, contemporary art, and incredible food.",
+    tags: ["City", "Culture", "Food", "History", "Adventure", "Nightlife"],
+    description: "A vibrant metropolis rich with heritage and incredible food.",
   },
+
   {
     id: 20,
     destination: "Auckland, New Zealand",
@@ -419,9 +503,9 @@ const holidays = [
       { name: "Adrenaline Sports", cost: 80, carbon: 2, time: "Afternoon" },
       { name: "Coastal Hiking", cost: 0, carbon: 0, time: "Morning" },
     ],
-    tags: ["adventure", "nature", "hiking", "scenic", "luxury"],
+    tags: ["City", "Nature", "Adventure", "Hiking", "Scenic", "Luxury"],
     description:
-      "New Zealand's gateway city combining urban excitement with access to breathtaking natural wonders.",
+      "Gateway city combining urban excitement with natural wonders.",
   },
   {
     id: 21,
@@ -443,10 +527,11 @@ const holidays = [
         time: "Afternoon",
       },
     ],
-    tags: ["city", "culture", "history", "food", "romantic"],
+    tags: ["City", "Culture", "History", "Food", "Romantic", "Walking"],
     description:
       "The iconic French capital known for art, fashion, cafés and timeless landmarks.",
   },
+
   {
     id: 22,
     destination: "Rome, Italy",
@@ -462,10 +547,11 @@ const holidays = [
       { name: "Trevi Fountain Visit", cost: 0, carbon: 0, time: "Afternoon" },
       { name: "Italian Food Tour", cost: 40, carbon: 1, time: "Evening" },
     ],
-    tags: ["city", "history", "culture", "food"],
+    tags: ["City", "Culture", "History", "Food", "Walking", "Scenic"],
     description:
       "An ancient city filled with Roman ruins, Renaissance art and incredible cuisine.",
   },
+
   {
     id: 23,
     destination: "Vienna, Austria",
@@ -486,10 +572,11 @@ const holidays = [
       { name: "Belvedere Museum", cost: 18, carbon: 1, time: "Afternoon" },
       { name: "Historic Café Visit", cost: 12, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["culture", "music", "history", "city"],
+    tags: ["City", "Culture", "History", "Music", "Food", "Walking"],
     description:
       "Elegant imperial city famous for classical music, coffee houses and grand architecture.",
   },
+
   {
     id: 24,
     destination: "Dubrovnik, Croatia",
@@ -510,10 +597,11 @@ const holidays = [
       { name: "Cable Car to Mount Srd", cost: 27, carbon: 3, time: "Evening" },
       { name: "Seafood Dinner", cost: 35, carbon: 1, time: "Evening" },
     ],
-    tags: ["beach", "history", "scenic", "culture"],
+    tags: ["City", "Beach", "History", "Scenic", "Culture", "Hot"],
     description:
       "A stunning Adriatic coastal city with medieval walls and crystal-clear waters.",
   },
+
   {
     id: 25,
     destination: "Budapest, Hungary",
@@ -534,10 +622,11 @@ const holidays = [
       { name: "Danube River Cruise", cost: 22, carbon: 4, time: "Evening" },
       { name: "Castle Hill Walk", cost: 0, carbon: 0, time: "Morning" },
     ],
-    tags: ["city", "culture", "history", "budget"],
+    tags: ["City", "Culture", "History", "Budget", "Nightlife"],
     description:
       "A beautiful Danube city famous for historic architecture and thermal baths.",
   },
+
   {
     id: 26,
     destination: "Santorini, Greece",
@@ -558,10 +647,19 @@ const holidays = [
       },
       { name: "Red Beach Visit", cost: 0, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["beach", "luxury", "scenic", "relaxation"],
+    tags: [
+      "Island",
+      "Beach",
+      "Scenic",
+      "Luxury",
+      "Romantic",
+      "Hot",
+      "Relaxation",
+    ],
     description:
       "A famous Greek island known for whitewashed villages, sunsets and volcanic landscapes.",
   },
+
   {
     id: 27,
     destination: "Seville, Spain",
@@ -582,10 +680,11 @@ const holidays = [
       { name: "Flamenco Show", cost: 35, carbon: 1, time: "Evening" },
       { name: "Tapas Bar Crawl", cost: 30, carbon: 1, time: "Evening" },
     ],
-    tags: ["culture", "food", "history", "city"],
+    tags: ["City", "Culture", "Food", "History", "Music", "Hot"],
     description:
       "Andalusia's vibrant capital famous for flamenco, Moorish architecture and tapas.",
   },
+
   {
     id: 28,
     destination: "Zurich, Switzerland",
@@ -606,10 +705,11 @@ const holidays = [
       { name: "Swiss Chocolate Tour", cost: 35, carbon: 1, time: "Afternoon" },
       { name: "Uetliberg Mountain Hike", cost: 0, carbon: 0, time: "Morning" },
     ],
-    tags: ["city", "nature", "luxury", "scenic"],
+    tags: ["City", "Nature", "Luxury", "Scenic", "Hiking", "Cold"],
     description:
       "A clean, picturesque Swiss city combining financial power with alpine beauty.",
   },
+
   {
     id: 29,
     destination: "Oslo, Norway",
@@ -630,10 +730,11 @@ const holidays = [
         time: "Evening",
       },
     ],
-    tags: ["nature", "culture", "city", "scenic"],
+    tags: ["City", "Nature", "Culture", "Scenic", "Cold"],
     description:
       "Norway's capital surrounded by forests and fjords with strong sustainability culture.",
   },
+
   {
     id: 30,
     destination: "Hanoi, Vietnam",
@@ -654,52 +755,9 @@ const holidays = [
       { name: "Halong Bay Day Cruise", cost: 60, carbon: 15, time: "Day Trip" },
       { name: "Temple of Literature", cost: 5, carbon: 0, time: "Afternoon" },
     ],
-    tags: ["city", "culture", "food", "history", "adventure"],
+    tags: ["City", "Culture", "History", "Food", "Adventure", "Hot"],
     description:
-      "Vietnam's historic capital known for chaotic streets, amazing food and colonial architecture.",
-  },
-];
-
-const fakeProfiles = [
-  {
-    id: 1,
-    name: "Maya",
-    age: 24,
-    image: "images/maya_image.webp",
-    likedHolidays: [1, 3, 8, 9],
-    bio: "Food lover, city enjoyer, always looking for an adventure",
-  },
-  {
-    id: 2,
-    name: "Jake",
-    age: 26,
-    image: "images/jake_image.jfif",
-    likedHolidays: [2, 6, 7, 10],
-    bio: "Hiker, nature nerd, happiest when off the beaten track.",
-  },
-  {
-    id: 3,
-    name: "Sofia",
-    age: 22,
-    image: "images/sofia_image.jfif",
-    likedHolidays: [3, 5, 7, 9],
-    bio: "Beach girl, sunset chaser, passionate about sustainable travel.",
-  },
-  {
-    id: 4,
-    name: "Tom",
-    age: 28,
-    image: "images/tom_image.jpg",
-    likedHolidays: [1, 2, 3, 4],
-    bio: "Budget traveller, cycling enthusiast, train over plane always.",
-  },
-  {
-    id: 5,
-    name: "Priya",
-    age: 23,
-    image: "images/priya_image.webp",
-    likedHolidays: [1, 4, 8, 10],
-    bio: "Culture vulture, museum lover, obsessed with European cities.",
+      "Vietnam's historic capital known for chaotic streets and amazing food.",
   },
 ];
 

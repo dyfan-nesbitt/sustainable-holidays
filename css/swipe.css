@@ -2,13 +2,19 @@ html {
   height: 100%;
 }
 
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-image: linear-gradient(to bottom right, #ffaaf7, #fff5ae);
+  padding: 0px;
+  background-image: linear-gradient(to left, #ffaaf7, #fff5ae);
 }
 
 .card {
